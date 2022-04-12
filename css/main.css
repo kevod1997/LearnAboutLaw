@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+body{
+        font-family: 'Roboto', sans-serif;
+}
+header{
+    background-color: white;
+}
+
+/*logo*/
+
+header div a{
+    display: flex;
+    justify-content: center;
+}
+header div a img{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+}
+
+/*menu*/
+.nav{
+    background-color: whitesmoke;
+    text-align: center;
+   
+}
+.navMenu li{
+    display: inline-block;
+    background-color: whitesmoke;
+
+}
+.navMenuLink{
+    list-style: none;
+    text-decoration: none;
+    margin: 0.625rem;
+    margin: 0.625rem;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+
+/* footer*/
+.footer{
+    background-color: black;  
+
+}
+.footerDisclaimerUno{
+    color: white;
+    height: 30vh;
+    width: 200px;
+    height: 40vh;
+}
+.footerLogo{
+    height: 40%;
+    width: 100%;
+    margin-left: 50%;
+    margin-top: 30px; 
+}
+.parrafoFooter{
+    margin-left: 100px;
+    width: 200px;
+}
+.footerDisclaimerDos{
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+    background-color: grey;
+}
+
+/*home*/
+.contenedor{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "section1 section3"
+                        "section2 section3";
+}
+
+.section1{
+    grid-area: section1;
+    margin: 1.25rem;
+    margin-top: 3.125rem;
+    margin-bottom: 0px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section2{
+    grid-area: section2;
+    margin-top: 0px;
+    margin: 1.25rem;
+    margin-bottom: 3.125rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.section3{
+    display: none;
+}
+
+@media only screen and (min-width:1024px){
+    .contenedor{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "section1 section3"
+                            "section2 section3";
+    }
+    .section3{
+        grid-area: section3;
+        display: block;
+        margin-top: 0px;
+        margin: 1.25rem;
+        margin-top: 3.125rem;
+        margin-bottom: 3.125rem;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* seccion sitios */
+.sitiosMainTitulo{
+    padding: 25 10px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.sitiosMainLinks ul{
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "senado saij infoleg";
+    margin-bottom: 10vh;
+}
+
+.senado{
+    grid-area: senado;
+}
+.saij{
+    grid-area: saij;
+}
+.infoleg{
+    grid-area: infoleg;
+}
+
+@media only screen and (min-width:1024px){
+   .sitiosMainLinks li{
+    display: flex;
+    flex-direction: row;
+    
+   }
+   .senado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.saij{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.infoleg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+   
+
