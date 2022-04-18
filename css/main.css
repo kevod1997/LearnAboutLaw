@@ -16,7 +16,7 @@ header div a{
     display: flex;
     justify-content: center;
 }
-header div a img{
+.imagenLogo{
     margin-bottom: 15px;
     width: 40%;
     height: 40%;
@@ -26,6 +26,7 @@ header div a img{
     animation-iteration-count: infinite;
     animation-duration: 5s;
 }
+
 @keyframes scale{
     from{
         transform: scale(1.0);
