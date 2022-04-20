@@ -6,26 +6,25 @@ body{
         font-family: 'Roboto', sans-serif;
 }
 /*logo*/
-.headerLogo{
+.divLogo{
     display: flex;
     justify-content: center;
+    background-image: linear-gradient(to left, rgb(58, 52, 52), whitesmoke);
+    height: 120px;
 }
 .imagenLogo{
-    margin-bottom: 15px;
-    width: 40%;
-    height: 40%;
-    display: flex;
-    align-items: center;
+    height: 100%;
 }
+
 /*menu*/
 .nav{
-    background-color: whitesmoke;
+    background-image: linear-gradient(to left, rgb(58, 52, 52), whitesmoke);
     text-align: center;
+    border-top: 1px solid black;
    
 }
 .navMenu li{
     display: inline-block;
-    background-color: whitesmoke;
     margin: 0.8rem;
 
 }
@@ -172,6 +171,20 @@ body{
     }
 }
 /*home*/
+.mainBack{
+    background-image: url(../img/columnas.jpg);
+    background-size: cover;
+    background-position: center;
+}
+main a{
+    display: flex;
+    justify-content: center;
+}
+.logoMain{
+    display: flex;
+    justify-content: center;
+    
+}
 .contenedor{
     height: 100vh;
     margin-left: 70px;
@@ -214,6 +227,12 @@ body{
         grid-template-areas: "section1 section3"
                             "section2 section3";
     }
+    .section1{
+        margin-top: 50px;
+    }
+    .section2{
+        margin-top: 50px;
+    }
     .section3{
         grid-area: section3;
         display: block;
@@ -228,27 +247,33 @@ body{
     }
 }
 /* seccion quienes somos */
-.mainQuienesSomos{
-    padding-top: 20px;
-    height: 105vh;
-    background-image: linear-gradient(to left, white, whitesmoke);
+.mainQuienes{
+    background-image: url(../img/columnas.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
 }
+    
 .sectionTitulo{
+    padding-top: 30px;
      text-align: center;
      text-transform: uppercase;
      font-weight: bold;
+     color: aliceblue;
  }
  .sectionParrafo{
+     color: white;
      font-size: 18px;
      margin-top: 25px;
      margin-left: 100px;
      margin-right: 100px;
      margin-bottom: 25px;
+     background-image: linear-gradient(to left, grey, black);
+     
  }  
 @media only screen and (min-width:1024px){
-    .mainQuienesSomos{
+    .mainQuienes{
         height: 50vh;
-        background-image: linear-gradient(to left, white, whitesmoke);
     }
     .sectionTitulo{
          margin-left: 100px;
